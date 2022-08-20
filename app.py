@@ -26,6 +26,6 @@ def scrape():
    mars.update_one({}, {"$set":mars_data}, upsert=True)
    return redirect('/', code=302)
 
-# close app
+# close
 if __name__ == "__main__":
-app.run()
+    app.run()
